@@ -3,7 +3,7 @@ MODEL:
   CONV_BODY: FPN.fpn_ResNet101_conv5_body
   FASTER_RCNN: True
   KEYPOINTS_ON: True
-NUM_GPUS: 8
+NUM_GPUS: 2
 SOLVER:
   WEIGHT_DECAY: 0.0001
   LR_POLICY: steps_with_decay
@@ -16,7 +16,7 @@ FPN:
   MULTILEVEL_ROIS: True
   MULTILEVEL_RPN: True
 RESNETS:
-  IMAGENET_PRETRAINED_WEIGHTS: 'data/pretrained_model/X-101-64x4d.pkl'
+  IMAGENET_PRETRAINED_WEIGHTS: '/media/AjetoNetworking/tmp/jcjsalom/hpe/weights/imagenet/X-101-64x4d.pkl'
   STRIDE_1X1: False  # default True for MSRA; False for C2 or Torch models
   TRANS_FUNC: bottleneck_transformation
   NUM_GROUPS: 64

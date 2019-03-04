@@ -1040,7 +1040,8 @@ __C.EXPECTED_RESULTS_EMAIL = ''
 
 # ------------------------------
 # Data directory
-__C.DATA_DIR = osp.abspath(osp.join(__C.ROOT_DIR, 'data'))
+# __C.DATA_DIR = osp.abspath(osp.join(__C.ROOT_DIR, 'data'))
+__C.DATA_DIR = '/media/AjetoGeneralData/MS-COCO/jcjsalom'
 
 # [Deprecate]
 __C.POOLING_MODE = 'crop'
